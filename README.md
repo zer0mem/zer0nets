@@ -11,3 +11,13 @@
 - NeuralNetwork class is responsible only for puting it all together
 	- initializing spaces
 	- interaction with correct spaces during forward and backward prop
+
+# Example of usage
+```python
+class NeuralNetwork(zer0nn.NeuralNetwork):
+    def __init__(self, input_nodes, hidden_nodes, output_nodes, learning_rate):
+        super(NeuralNetwork, self).__init__(
+                [(None, input_nodes), ("sig", hidden_nodes), ("lin", output_nodes)],
+                learning_rate,
+                .995)
+```

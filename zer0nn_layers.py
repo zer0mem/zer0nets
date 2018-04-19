@@ -16,5 +16,5 @@ class SpaceLayerFactory:
             return ReLU(dim1, dim2, ind)
         if "ass" == name:
             return AntiSaturationSig(dim1, ind)
-        assert False, "space-layer : <%s> not implemented!"%name
+        assert False, "space-layer : <{}> not implemented!".format(name)
         return None
